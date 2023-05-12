@@ -23,9 +23,20 @@ $(document).scroll(function () {
   }
 });
 
+$(document).scroll(function () {
+  //stick sidebar to top of page
+  var y = $(this).scrollTop();
+  var sidebar = $('#sidebar').offset().top;
+  if (y > sidebar) {
+      $('aside').addClass('stickyaside');
+  } else {
+      $('aside').removeClass('stickyaside');
+  }
+});
+
+
 (function($) {
 
- 
   $.fn.visible = function(partial) {
     
       var $t            = $(this),
