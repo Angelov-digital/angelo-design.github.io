@@ -6,6 +6,12 @@
 
 }
 @font-face {
+    font-family: spartan;
+    src: url(fonts/Spartan-Regular.ttf);
+    font-weight: light;
+
+}
+@font-face {
     font-family: spartanlight;
     src: url(fonts/Spartan-Light.ttf);
     font-weight: light;
@@ -30,8 +36,7 @@
 
 }
 
-.gradient-hover-effect {
-    
+.gradient-hover-effect {   
     padding: 12px 33px;
     background: linear-gradient(90deg, #0E0033, transparent) #050769;
     font-family: spartanlight;
@@ -48,16 +53,38 @@
     background-color: #CA1D43;
     color: #fff;
 }
-
+/*headers*/
 .header1{
     font-size: 2vw;
     font-family: be;
     text-align: left;
 }
+.header2{
+    font-size: 2vw;
+    font-family: spartan;
+    text-align: center;
+    padding: 40px;
+}
+.header3{
+    font-size: 1.7rem;
+    font-family: spartansemi;
+    text-align: center;
+    padding: 40px;
+}
+/*lines*/
+.hr2{
+    width: 50%;
+    margin: auto;
+}
 .gradient-text{
     background: linear-gradient(to right, #CA1D43, #842F72 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor:pointer;
+}
+.whatwedo:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
 }
 
 .whatwedo{
@@ -107,6 +134,15 @@ body {
 }
 .spacer{
     height: 150px;
+}
+/*Icons*/
+.social{
+    max-width: 43px;
+    transition: background-color 0.9s;
+    border-radius: 50px;
+}
+.social:hover, .social:focus {
+    background: linear-gradient(90deg, #0E0033, transparent) #CA1D43;
 }
 /*NAVIGATION*/
 .cta {
@@ -263,7 +299,6 @@ nav {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     z-index: 9999;
-    transition: ;
   }
 .vl {
     margin-top: 100px;
@@ -281,8 +316,7 @@ nav {
 
   /* Style the links on hover */
   .sidebar a:hover {
-    background-color: #555;
-    color: white;
+
   }
   
 
@@ -329,10 +363,38 @@ nav {
         margin-top: 30px;
     }
 }
+/*Ourscope section*/
+    .ourscope{
+        position: relative;
+        bottom: 25px;
+        width: 100%;
+        background-color: #020220;
+    }
+    .scopecont{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center; /* align items horizontally to center */
+        align-items: center; /* align items vertically to center */
+    }
+    .scopeiccont{
+        margin: 20px;
+        width: 150px;
+        text-align: center;
+    }
+    .scopetxtcont{
+        padding: 50px;
+    }
+    .scopedesc{
+        opacity: 0;
+        transition: visibility 0s, opacity 0.4s linear;
+    }
+    .service-img:hover + .scopedesc{
+        opacity: 100; /* Show when hovering over sibling element */
+    }
 /*SECTION2*/
 .SECTION2{
     position: relative;
-    bottom: 70px;
     background-color: #04010e;
     background-image: url("../img/lightkinetism4.pn");
     background-size: cover;
