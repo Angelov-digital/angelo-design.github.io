@@ -49,7 +49,25 @@
     border: solid 1px rgb(185, 185, 230);
     
 }
-  .gradient-hover-effect:hover, .gradient-hover-effect:focus {
+.gradient-hover-effect:hover, .gradient-hover-effect:focus {
+    background-color: #CA1D43;
+    color: #fff;
+}
+
+.gradient-hover-effect2 {   
+    padding: 0.5vw 1vw;
+    background: linear-gradient(90deg, #0E0033, transparent) #050769;
+    font-family: spartanlight;
+    font-size: 1.3vw;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.9s;
+    place-content: center;
+    border-radius: 40px;
+    border: solid 1px rgb(185, 185, 230);
+    
+}
+  .gradient-hover-effect2:hover, .gradient-hover-effect2:focus {
     background-color: #CA1D43;
     color: #fff;
 }
@@ -71,11 +89,24 @@
     text-align: center;
     padding: 40px;
 }
+.header4{
+    font-size: 1.7rem;
+    font-family: spartansemi;
+    text-align: left;
+    padding: 10px;
+}
 /*lines*/
 .hr2{
     width: 50%;
     margin: auto;
 }
+.line1{
+    border-top: 0px solid white;
+    margin-right: 25%;
+    width: 100%;   
+}
+
+/*gradienttext*/
 .gradient-text{
     background: linear-gradient(to right, #CA1D43, #842F72 );
     -webkit-background-clip: text;
@@ -301,21 +332,19 @@ nav {
     z-index: 9999;
   }
 .vl {
-    margin-top: 100px;
-    border-left: 1px solid rgb(255, 255, 255);
+    margin-top: 30vh;
+    border-left: 0px solid rgb(255, 255, 255);
     height: 400px;
-    width: 100px;
-    
+    width: 100px;   
 }
-  
-  .sidebar a {
+.sidebar a {
     display: block; /* Make the links appear as blocks */
     padding: 6px 12px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
   }
 
   /* Style the links on hover */
-  .sidebar a:hover {
+.sidebar a:hover {
 
   }
   
@@ -364,11 +393,11 @@ nav {
     }
 }
 /*Ourscope section*/
-    .ourscope{
+    .ourscope{ 
         position: relative;
-        bottom: 25px;
+        top: -70px; 
         width: 100%;
-        background-color: #020220;
+        background-color: #09091b;
     }
     .scopecont{
         display: flex;
@@ -393,8 +422,9 @@ nav {
         opacity: 100; /* Show when hovering over sibling element */
     }
 /*SECTION2*/
-.SECTION2{
+.servicesec{
     position: relative;
+    top: -70px;
     background-color: #04010e;
     background-image: url("../img/lightkinetism4.pn");
     background-size: cover;
@@ -409,9 +439,9 @@ nav {
     position: relative;
     bottom: 70px;
     text-align: center;
-    height: 80vh;
 }
 .aboutme{
+    height: 85vh;
     z-index: 9;
     background-image: url("img/illustration.png");
     background-color: #ffffff;
@@ -427,7 +457,6 @@ nav {
     height: 40px;
 }
 .about-wrapper{
-    height: 85vh;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -474,10 +503,9 @@ nav {
     }
 }
 .indigo{
-    position: relative;
     width: 100%;
-    padding-left: 15vh;
-    padding-right: 15vh;  
+    padding-left: 10vw;
+    padding-right: 10vw;  
 }
 @media only screen and (max-width: 700px) {
     .indigo{
@@ -495,7 +523,7 @@ nav {
 .service-img{
     position: relative;
     display: block;
-    max-width: 200px;
+    max-height: 10vw;
     -webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
     -ms-transition: all 500ms ease-in-out;
@@ -518,12 +546,7 @@ nav {
         font-size: 18px;
     }
 }
-.line1{
-    border-top: 0px solid white;
-    margin-right: 25%;
-    width: 90%;
-    
-}
+
 .service-txt{
     font-size: 18px;
     font-family: spartanlight;  
@@ -568,32 +591,46 @@ nav {
     
 }
 .servImg2 img{
-    max-height: 50vh;
+    max-height: 25vw;
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
     padding: 0px;
 }
-.arrowCont{
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 150px;
+.servbutcont{
+    margin-top: 2vw;
 }
-.arrowCont p{
-    margin-bottom: 10px;
-}
+
 .arrow{
-    opacity: 0;
+    opacity: 0vw;
     width: 50px;
     right: 0;
     margin-left:20px;
 }
-.service-txt p{
+.service-txt li{
+    font-size: 1.3vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.servcontline{
+    border: solid white 1px;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 5vh;
+    margin-bottom: 8vh;
 
+}
+.servsplit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.servback{
+    background-color: #0A051A;
+    padding-left: 50px;
+}
 /*Animation Services scroll*/
 .come-in {
     transform: translateY(150px);
