@@ -107,6 +107,12 @@
     font-family: spartan;
     margin: 20px;
 }
+.studiodesctxt{
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    width: 45%;
+}
 /*lines*/
 .hr2{
     width: 50%;
