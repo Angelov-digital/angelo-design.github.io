@@ -78,8 +78,8 @@
     text-align: left;
 }
 .header2{
-    font-size: 2vw;
-    font-family: spartan;
+    font-size: 2.2vw;
+    font-family: spartansemi;
     text-align: center;
     padding: 40px;
 }
@@ -90,7 +90,7 @@
     padding: 40px;
 }
 .header4{
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: spartansemi;
     text-align: left;
     padding: 10px;
@@ -103,14 +103,19 @@
 }
 /*texts*/
 .servdesctxt{
-    font-size: 1.1rem;
+    font-size: 1.1vw;
     font-family: spartan;
-    margin: 30px;
+    margin: 20px;
 }
 /*lines*/
 .hr2{
     width: 50%;
     margin: auto;
+}
+.hr3{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 25px;
 }
 .line1{
     border-top: 0px solid white;
@@ -176,7 +181,7 @@ body {
     z-index: 0;
 }
 .spacer{
-    height: 150px;
+    height: 50px;
 }
 /*Icons*/
 .social{
@@ -416,6 +421,7 @@ nav {
         top: -70px; 
         width: 100%;
         background-color: #09091b;
+        background-image: url(img/sazba.jpg);
     }
     .scopecont{
         display: flex;
@@ -423,6 +429,7 @@ nav {
         width: 100%;
         justify-content: center; /* align items horizontally to center */
         align-items: center; /* align items vertically to center */
+        
     }
     .scopeiccont{
         margin: 20px;
@@ -432,12 +439,18 @@ nav {
     .scopetxtcont{
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 80%;
         padding: 50px;
         padding-top: 20px;
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .blueback{
+        margin: auto;
+        width: 80%;
+        background-color: #09091bb2;
+
     }
     .scopedesc{
         text-align: center;
@@ -594,7 +607,7 @@ nav {
     
 }
 .service-txt p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -682,6 +695,41 @@ nav {
   @keyframes come-in {
     to { transform: translateY(0); }
   }
+
+/*Contact*/
+
+.contact{
+    background-color: #0A051A;
+    position: relative;
+    top: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+.contact p {
+    margin-top: 10px;
+}
+.contact-head{
+    position: relative;
+    font-size: 30px;
+    bottom: 30px;
+}
+
+.contwrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contcont{
+    width: 210px;
+    margin-bottom: 50px;
+}
+.contcont p{
+    text-align: center;
+}
+.conticon{
+    max-width: 65px;
+}
 /*SECTION4 Gallery*/
 .gallery{
    
@@ -998,22 +1046,7 @@ nav {
 .next:hover {
   background-color: rgba(82, 82, 82, 0.452);
 }
-/*CONTACT*/
-.contact{
-    padding-top: 7vh;
-    padding-bottom: 7vh;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 18px;
-}
-.contact p {
-    margin: 10px;
-}
-.contact-head{
-    position: relative;
-    font-size: 30px;
-    bottom: 30px;
-}
+
 /*FOOTER*/
 .footer{
     text-align: center;
