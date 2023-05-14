@@ -675,6 +675,20 @@ nav {
     vertical-align: bottom;
     padding: 0px;
 }
+.overlaycontainer{
+    position: relative;
+}
+.servoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    background-color: rgba(0,0,0,0.5);
+}
+.overlaycontainer:hover .servoverlay{
+    opacity: 1;
+}
 .servbutcont{
     margin-top: 2vw;
 }
