@@ -37,7 +37,7 @@
 
     <div id="navWrap">
         <nav> 
-            <img class="logo" src="img/pageicon2.jpg">
+            
             <div id="work">
                 <a href="#services"><p class="nav-link">Services</p></a>
                 <hr id="work-underline">
@@ -53,7 +53,9 @@
                 <hr id="contact-underline">
             </div>
         </nav>
-        <div id="customID" class="cta hide"></div>
+        <div id="customID" class="cta hide">
+            <img class="logo" src="img/pageicon2.jpg">
+        </div>
     </div>    
     
     <div id="navWrapTop">
@@ -253,50 +255,6 @@
         <div class="spacer">
     </section>
 
-    <section class="contact">
-        <p class="header2">Contact</p>
-        <div class="contwrap">
-            <div class="contcont">
-                <img class="conticon" src="img/icon/email.svg">
-                <p class="">ang.des.studio@gmail.com</p>
-            </div>
-            <div class="contcont">
-                <img class="conticon" src="img/icon/phone.svg">
-                <p class="">+45 50 16 90 29</p>
-            </div>
-            <div class="contcont">
-                <img class="conticon" src="img/icon/location.svg">
-                <p class="">Vognporten 14 <br> Albertslund</p>
-            </div>
-        </div>
-        <hr class="hr3">
-        <p class="">Every project is unique and we will handle it with an individual approach and a great care.<br>
-                    We are looking forward to your next project!</p>
-        <br>
-    </section>
-    <!--If Hosting: this section contains direct messaging with php script (autoemail) -->
-
-    <section class="gallery">
-
-        <div class="link-wrapper">
-
-            <p class="head1" id="gallery-head">Galleries</p>
-
-            <div class="gallery-wrapper">
-
-                <div class="g-button">
-                    <p class="g-butt-txt">Graphics</p>
-                </div>
-                <div class="g-button">
-                    <p class="g-butt-txt">Architecture</p>
-                </div>
-                <div class="g-button">
-                    <p class="g-butt-txt">3D</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="projects" id="work-projects">
         <div class="projecthead-wrapper">
             <p class="project-head">Recent Projects</p>
@@ -305,6 +263,28 @@
 
             <div class="projects-wrapper">
 <!-- 1 --> 
+                
+<!-- 2 --> 
+                <div class="project" id="project2">
+                    <img src="img/" class="">
+                    <div class="project-txt-overlay">
+                        <p>Viuf Art - art print webshop</p>
+                    </div>
+                </div>
+                <div id="project2-modal" class="modal">
+                    <!-- modal frame -->
+                    <p class="modal-head">Art Prints</p>
+                    <div class="modal-frame">
+                        <img src="img/" class="modal-content">
+                        <img src="img/" class="modal-content">
+                    </div>
+                        <!-- The Close Button -->
+                        <span class="close" id="close2">&times;</span>
+                        <!-- Arrows -->
+                        <a class="next" id="next2" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" id="prev2" onclick="plusSlides(-1)">&#10094;</a>
+                        <p class="modal-description"></p>
+                </div>
                 <div class="project" id="project1">
                     <img src="img/Graphics/future commercial graphic.jpg" class="">
                     <div class="project-txt-overlay">
@@ -323,84 +303,63 @@
                         <!-- Arrows -->
                         <a class="next" id="next1" onclick="plusSlides(1)">&#10095;</a>
                         <a class="prev" id="prev1" onclick="plusSlides(-1)">&#10094;</a>
-                        <p class="modal-description">Brand design, CAD model of the bottle for the fabrication and Commercials</p>  
-                </div>
-<!-- 2 --> 
-                <div class="project" id="project2">
-                    <img src="img/Graphics/slideshow2.jpg" class="">
-                    <div class="project-txt-overlay">
-                        <p>Art Prints</p>
-                    </div>
-                </div>
-                <div id="project2-modal" class="modal">
-                    <!-- modal frame -->
-                    <p class="modal-head">Art Prints</p>
-                    <div class="modal-frame">
-                        <img src="img/Graphics/slideshow1.jpg" class="modal-content">
-                        <img src="img/Graphics/slideshow2.jpg" class="modal-content">
-                    </div>
-                        <!-- The Close Button -->
-                        <span class="close" id="close2">&times;</span>
-                        <!-- Arrows -->
-                        <a class="next" id="next2" onclick="plusSlides(1)">&#10095;</a>
-                        <a class="prev" id="prev2" onclick="plusSlides(-1)">&#10094;</a>
-                        <p class="modal-description">Large scale prints and mockups</p>
+                        <p class="modal-description">Brand design, 3D Model of the bottle for the fabrication and Commercials</p>  
                 </div>
 <!-- 3 --> 
                 <div class="project" id="project3">
-                    <img src="img/arch/result6.jpg" class="">
+                    <img src="img/" class="">
                     <div class="project-txt-overlay">
-                        <p>Architectural models</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project3-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Architectural studies</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/arch/result1.jpg" class="modal-content">
-                        <img src="img/arch/4B.jpg" class="modal-content">
+                        <img src="img/" class="modal-content">
+                        <img src="img/" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close3">&times;</span>
                     <!-- Arrows -->
                     <a class="next" id="next3" onclick="plusSlides(1)">&#10095;</a>
                     <a class="prev" id="prev3" onclick="plusSlides(-1)">&#10094;</a>
-                    <p class="modal-description">CAD model for fabrication, scale 1:500. </p>
-                    <p class="modal-description">Made in cooperation with NeoVisual studio</p>
+                    <p class="modal-description"></p>
+                    <p class="modal-description"></p>
                 </div>
 <!-- 4 --> 
                 <div class="project" id="project4">
-                    <img src="img/3D/1_VTOL drone HD composition.jpg" class="">
+                    <img src="img/" class="">
                     <div class="project-txt-overlay">
-                        <p>3D concept art</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project4-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Personal Drone</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/3D/1_VTOL drone HD composition.jpg" class="modal-content">
+                        <img src="img/" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close4">&times;</span>
                     <!-- Arrows -->
                     <a class="next" id="next4" onclick="plusSlides(1)">&#10095;</a>
                     <a class="prev" id="prev4" onclick="plusSlides(-1)">&#10094;</a>
-                    <p class="modal-description">Concept project made in Intersip in D1 studio (Industrial design)</p>
+                    <p class="modal-description"></p>
                 </div>
 <!-- 5 -->          
                 <div class="project" id="project5">
-                    <img src="img/art/Heavydream.jpg" class="">
+                    <img src="img/" class="">
                     <div class="project-txt-overlay">
-                        <p>Digital drawings</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project5-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Freestyle digital drawings</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/art/Heavydream.jpg" class="modal-content">
-                        <img src="img/art/icemoon.png" class="modal-content">
+                        <img src="img/" class="modal-content">
+                        <img src="img/" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close5">&times;</span>
@@ -431,57 +390,57 @@
                 </div>
 <!-- 7 -->
                 <div class="project" id="project7">
-                    <img src="img/3D/titan 17 front smoke.jpg" class="vertical">
+                    <img src="img/" class="vertical">
                     <div class="project-txt-overlay-vertical" id="">
-                        <p>Game character</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project7-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Freestyle 3D</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/3D/titan 17 front smoke.jpg" class="modal-content">
+                        <img src="img/" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close7">&times;</span>
                     <!-- Arrows -->
                     <a class="next" id="next7" onclick="plusSlides(1)">&#10095;</a>
                     <a class="prev" id="prev7" onclick="plusSlides(-1)">&#10094;</a>
-                    <p class="modal-description">Sci-fi video game character</p>
+                    <p class="modal-description"></p>
                 </div>
 <!-- 8 -->
                 <div class="project" id="project8">
-                    <img src="img/arch/all tuneup.jpg" class="">
+                    <img src="img/" class="">
                     <div class="project-txt-overlay">
-                        <p>Architectural visualizations</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project8-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Architectural visualizations</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/arch/all tuneup.jpg" class="modal-content">
-                        <img src="img/arch/corridor tuneup.jpg" class="modal-content">
+                        <img src="img/" class="modal-content">
+                        <img src="img/a" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close8">&times;</span>
                     <!-- Arrows -->
                     <a class="next" id="next8" onclick="plusSlides(1)">&#10095;</a>
                     <a class="prev" id="prev8" onclick="plusSlides(-1)">&#10094;</a>
-                    <p class="modal-description">Reporyje Railway station - made from CAD data provided by Arch. Irena Brotankova</p>
+                    <p class="modal-description"></p>
                 </div>
 <!-- 9 -->
                 <div class="project" id="project9">
-                    <img src="img/art/the ice tomb raider6 post pr2.jpg" class="">
+                    <img src="img/" class="">
                     <div class="project-txt-overlay-vertical">
-                        <p>3D scene</p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="project9-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Freestyle 3D</p>
+                    <p class="modal-head"></p>
                     <div class="modal-frame">
-                        <img src="img/art/the ice tomb raider6 post pr2.jpg" class="modal-content-vertical">
+                        <img src="img/" class="modal-content-vertical">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close9">&times;</span>
@@ -492,14 +451,29 @@
                 </div>
             </div>
         </div>
-        <!--<div id="fullpage" onclick="this.style.display='none';"></div>!-->
     </section>
-    <section class="contact" id="contactscroll">
-        <p class="contact-head">Contact</p>
-        <p>adamangelo.osvc@gmail.com</p>
-        <p>+45 50 16 90 29</p>
-        <!--<p>Please, do not hesitate to reach me If you wish to discuss further deatils.</p>-->
+    <section class="contact">
+        <p class="header2">Contact</p>
+        <div class="contwrap">
+            <div class="contcont">
+                <img class="conticon" src="img/icon/email.svg">
+                <p class="">ang.des.studio@gmail.com</p>
+            </div>
+            <div class="contcont">
+                <img class="conticon" src="img/icon/phone.svg">
+                <p class="">+45 50 16 90 29</p>
+            </div>
+            <div class="contcont">
+                <img class="conticon" src="img/icon/location.svg">
+                <p class="">Vognporten 14 <br> Albertslund</p>
+            </div>
+        </div>
+        <hr class="hr3">
+        <p class="">Every project is unique and we will handle it with an individual approach and a great care.<br>
+                    We are looking forward to your next project!</p>
+        <br>
     </section>
+    <!--If Hosting: this section contains direct messaging with php script (autoemail) -->
     <footer class="footer">
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Angelov Design All Rights Reserved</p>
     </footer>
