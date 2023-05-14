@@ -621,17 +621,14 @@ nav {
         font-size: 18px;
     }
 }
-
-.service-txt{
-    font-family: spartanlight;  
-    text-align: left;
-    bottom: 0;
-    
-}
+ 
 .service-txt p{
     font-size: 1.1vw;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: spartanlight;  
+    text-align: left;
+    bottom: 0;
 }
 @media only screen and (max-width: 700px) {
     .service-txt{
@@ -645,7 +642,7 @@ nav {
 }
 .serviceMain{
     position: relative;
-    width: 100%;
+    max-width: 100%;
     left: 0px;
     flex-grow: 1;
     margin-left: auto;
@@ -662,6 +659,9 @@ nav {
     background-size: cover;
     justify-content: center;
 }
+
+
+
 .serviceMain:hover .service-img{
     -webkit-animation: pulse 1s;
     animation: pulse 1s;
@@ -718,6 +718,54 @@ nav {
 .servback{
     background-color: #0A051A;
     padding-left: 20px;
+}
+@media only screen and (min-width: 1600px) {
+    .servicewraper{
+     
+    }
+    .serviceMain{
+        position: relative;
+        max-width: 78%;
+        left: 0px;
+        flex-grow: 1;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(black, 0.2);
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-image: url();
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+    }
+    .service-img2{
+        max-width: 150px;  
+    }
+    .overlaycontainer img{
+        max-height: 300px;
+        border-radius: 12px;
+    }
+    .service-txt p{
+        font-size: 17px;
+    }
+    .gradient-hover-effect2 {   
+        font-size: 18px;
+    }
+    .servdesctxt{
+        font-size: 17px;
+        margin: 8px;
+    }
+    .servsplit{
+        grid-template-columns: 1fr 2fr;
+    }
+    .servcontline{
+        padding: 10px;
+    }
+    
 }
 /*Animation Services scroll*/
 .come-in {
