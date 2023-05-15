@@ -19,6 +19,7 @@
         body {
             font-family: spartanlight; 
             margin: 0;  
+            background-color: #04010e;  
             }
     </style>
 
@@ -31,21 +32,25 @@
         <div class="namewrapper">
             <p class="name animate__animated animate__fadeInDown">Angelo Design</p>
             <p class="designer animate__animated animate__fadeInRight">Visual & Website Studio</p>
+            <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-2s" src="img/icon/arrowDown.svg">
         </div>
+        
     </section>
 
     
 
     <div id="navWrap">
-        <nav> 
-            
+        <nav>   
+            <a class="cta2 hide" href="index.html" id="logo">
+                <img class="logo" src="img/pageicon2.jpg">
+            </a>          
             <div id="work">
                 <a href="#services"><p class="nav-link">Services</p></a>
                 <hr id="work-underline">
             </div>
 
             <div id="about">
-                <a href="#aboutscroll"><p class="nav-link">About</p></a>
+                <a href="#aboutus"><p class="nav-link">About</p></a>
                 <hr id="about-underline">
             </div>
 
@@ -54,46 +59,47 @@
                 <hr id="contact-underline">
             </div>
         </nav>
-        <div id="customID" class="cta hide">
-            <img class="logo" src="img/pageicon2.jpg">
+
+        <div id="customID" class="cta hide">         
         </div>
     </div>    
     
     <div id="navWrapTop">
         <div id="work">
-            <a href="#services"><p class="nav-link">Graphics</p></a>
+            <a href="#services"><p class="nav-link"></p></a>
             <hr id="work-underline">
         </div>
 
         <div id="about">
-            <a href="#aboutscroll"><p class="nav-link">Gallery</p></a>
+            <a href="#aboutscroll"><p class="nav-link"></p></a>
             <hr id="about-underline">
         </div>
 
         <div id="contact">
-            <a href="#contactscroll"><p class="nav-link">WebDev</p></a>
+            <a href="#contactscroll"><p class="nav-link"></p></a>
             <hr id="contact-underline">
         </div>
     </div> 
     
-    <section class="about">
+    
 
-        <div class="sidebar" id="sidebar">
-            <aside>
-                <div class="vl">
-                    <a href="#">
-                        <img class="social" src="img/icon/social1-04.svg">
-                    </a>
-                    <a href="#">
-                        <img class="social" src="img/icon/social1-05.svg">
-                    </a>
-                    <a href="#">
-                        <img class="social" src="img/icon/social1-06.svg">
-                    </a>
-                </div>         
-            </aside>
-        </div>
+    <div class="sidebar" id="sidebar">
+        <aside>
+            <div class="vl">
+                <a href="#">
+                    <img class="social" src="img/icon/social1-04.svg">
+                </a>
+                <a href="#">
+                    <img class="social" src="img/icon/social1-05.svg">
+                </a>
+                <a href="#">
+                    <img class="social" src="img/icon/social1-06.svg">
+                </a>
+            </div>         
+        </aside>
+    </div>
 
+    <section class="about" id="aboutus">
         <div class="aboutme">
             <div class="about-wrapper">  
                 <div class="motoCont">    
@@ -108,7 +114,7 @@
                     <br>
                     <br> 
                     <br>   
-                    <a href="# hire us page" class="gradient-hover-effect">Hire Us</a>
+                    <a href="hireus.html" class="gradient-hover-effect">Hire Us</a>
                     <br>
                 </div>  
                 
@@ -273,7 +279,7 @@
 
     <section class="projects" id="work-projects">
         <div class="projecthead-wrapper">
-            <p class="project-head">Recent Projects</p>
+            <p class="header2">Recent Projects</p>
         </div>
         <div class="projects-background">
 
@@ -468,7 +474,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contactscroll">
         <p class="header2">Contact</p>
         <div class="contwrap">
             <div class="contcont">
@@ -489,8 +495,10 @@
                     We are looking forward to your next project!</p>
         <br>
     </section>
+    <p>Terms and conditions</p>
     <!--If Hosting: this section contains direct messaging with php script (autoemail) -->
     <footer class="footer">
+        
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Angelo Design All Rights Reserved</p>
     </footer>
 

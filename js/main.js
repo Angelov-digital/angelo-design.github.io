@@ -8,6 +8,16 @@ var myScrollFunc = function() {
     myID.className = "cta hide"
   }
 };
+myID2 = document.getElementById("logo");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 860) {
+    myID2.className = "cta2 show"
+  } else {
+    myID2.className = "cta2 hide"
+  }
+};
 
 window.addEventListener("scroll", myScrollFunc);
 

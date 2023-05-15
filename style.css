@@ -64,13 +64,13 @@
     transition: background-color 0.9s;
     place-content: center;
     border-radius: 40px;
-    border: solid 1px rgb(185, 185, 230);
-    
+    border: solid 1px rgb(185, 185, 230);    
 }
   .gradient-hover-effect2:hover, .gradient-hover-effect2:focus {
     background-color: #CA1D43;
     color: #fff;
 }
+
 /*headers*/
 .header1{
     font-size: 2vw;
@@ -101,6 +101,20 @@
     text-align: left;
     padding-bottom: 20px;   
 }
+.headerpage{
+    font-size: 2rem;
+    font-family: spartan;
+    text-align: center;
+    margin-top: 10px;
+}
+.pagenadpis{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    top: -70px;
+    right: 0;
+}
+
 /*texts*/
 .servdesctxt{
     font-size: 1.1vw;
@@ -119,7 +133,7 @@
     margin: auto;
 }
 .hr3{
-    width: 80%;
+    width: 50%;
     margin: auto;
     margin-bottom: 25px;
 }
@@ -200,10 +214,14 @@ body {
 }
 /*NAVIGATION*/
 .logo{
+    width: 70px;
+}
+.logolink{
     width: 60px;
     position: absolute;
     left: 0;
     top: 0;
+    cursor: pointer;
 }
 .cta {
     position: fixed;
@@ -217,6 +235,19 @@ body {
     background-size: cover;
     z-index: 1;
     transition: all 1s;
+}
+.cta2 {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 60px;
+    z-index: 1;
+    transition: all 1s;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 .hide {
     opacity:0;
@@ -248,7 +279,7 @@ nav {
     padding: 20px 0px;
     width: 100%;
     font-family: geniso;
-    z-index: 100;
+    z-index: 99;
     color: #ffffff;
     text-align: center;
     /*background-image: linear-gradient(to right, #46eded, #28125c);
@@ -263,7 +294,10 @@ nav {
 .sticky {
     position: fixed;
     top:0;
-    z-index: 9999;
+    z-index: 99;
+    background-color: #0b0123;
+    transition: background-color 0.9s;
+    
 }
 .stickyaside{
     position: fixed;
@@ -372,12 +406,7 @@ nav {
     text-decoration: none; /* Remove underline from links */
   }
 
-  /* Style the links on hover */
-.sidebar a:hover {
-
-  }
-  
-
+ 
 /*SECTION1*/
 .main-container {
     background-image: url("img/mainbackground.jpg");
@@ -389,6 +418,22 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+}
+
+.logotype{
+    position: absolute;
+    font-family: aquire;
+    font-size: 40px;
+    right: 10px;
+    text-align: right;
+}
+.scrollpls{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    opacity: 50%;
+    top: 22vh;
 }
 .namewrapper{
     margin: 0;
@@ -746,7 +791,7 @@ nav {
         max-width: 150px;  
     }
     .overlaycontainer img{
-        max-height: 300px;
+        max-height: 320px;
         border-radius: 12px;
     }
     .service-txt p{
@@ -765,6 +810,9 @@ nav {
     .servcontline{
         padding: 10px;
     }
+    .header4{
+        font-size: 2rem;
+    }
     
 }
 /*Animation Services scroll*/
@@ -781,7 +829,6 @@ nav {
   }
 
 /*Contact*/
-
 .contact{
     background-color: #0A051A;
     position: relative;
@@ -790,6 +837,7 @@ nav {
     font-size: 15px;
     padding-bottom: 50px;
 }
+
 .contact p {
     margin-top: 10px;
 }
@@ -1134,6 +1182,8 @@ nav {
 
 /*FOOTER*/
 .footer{
+    position: absolute;
+    top: 0;
     text-align: center;
     font-size: 13px;
     position: relative;
@@ -1141,4 +1191,80 @@ nav {
     background-color: #04010e;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+
+/*Hire us page style*/
+.subpagenav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color:  #0a0122;
+    z-index: 99999;
+    height: 70px;    
+}
+.hireuswraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.hireimg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.hiretxt{
+    padding-left: 30px;
+}
+#pricelisthire{
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    right: 0; 
+}
+.hireuscont{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-hireus{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 50px;
+    top: 90px;
+}
+.main-container-hireus {
+    background: linear-gradient(to left, #0a051a, #071844);
+    background-color: #0f0f0f;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.backwrap{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    
+}
+.arrowback{
+    width: 50px;
+    rotate: 180deg;
+    margin-left: 10px;
 }
