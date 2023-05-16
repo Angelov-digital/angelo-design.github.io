@@ -365,7 +365,7 @@ nav {
         background: none;
         padding-top: 15px;
     }
-      nav {   
+    nav {   
        
     }
     .sticky {
@@ -597,6 +597,7 @@ nav {
 @media only screen and (max-width: 700px) {
     .scopetxtcont{
         padding: 0px;
+        width: 70%;
     }
     .scopedesc{
         opacity: 1;
@@ -1017,6 +1018,7 @@ nav {
 .contwrap{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .contcont{
@@ -1029,6 +1031,16 @@ nav {
 }
 .conticon{
     max-width: 65px;
+}
+@media only screen and (max-width: 700px) {
+    .contact{
+        padding-top:70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contwrap{
+        margin-top: 50px;
+    }
 }
 /*SECTION4 Gallery*/
 .gallery{
@@ -1347,7 +1359,10 @@ nav {
 .next:hover {
   background-color: rgba(82, 82, 82, 0.452);
 }
-
+/*footermenu*/
+.footermenu{
+    text-align: center;
+}
 /*FOOTER*/
 .footer{
     position: absolute;
@@ -1368,14 +1383,13 @@ nav {
     top: 0;
     right: 0;
     width: 100%;
-    background-color:  #0a0122;
+    background-color: #0a0122;
     z-index: 99999;
     height: 70px;    
 }
 .hireuswraper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr; 
     flex-direction: row;
     width: 80%;
     margin: auto;
