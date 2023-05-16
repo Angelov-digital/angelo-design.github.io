@@ -66,11 +66,18 @@
     border-radius: 40px;
     border: solid 1px rgb(185, 185, 230);    
 }
-  .gradient-hover-effect2:hover, .gradient-hover-effect2:focus {
+.gradient-hover-effect2:hover, .gradient-hover-effect2:focus {
     background-color: #CA1D43;
     color: #fff;
 }
+@media only screen and (max-width: 700px){
+    .gradient-hover-effect2 {   
+        padding: 2.5vw 4.5vw;
+        font-size: 4vw;
+        
+    }
 
+}
 /*headers*/
 .header1{
     font-size: 2vw;
@@ -114,6 +121,28 @@
     top: -70px;
     right: 0;
 }
+@media only screen and (max-width: 700px) {
+    .header1{
+        font-size: 1.5rem;
+        font-family: be;
+        text-align: left;
+    }
+    .header2{
+        font-size: 1.8rem;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header3{
+        font-size: 1.5rem;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header4{
+        font-size: 1.6rem;
+    }
+}
 
 /*texts*/
 .servdesctxt{
@@ -150,16 +179,7 @@
     -webkit-text-fill-color: transparent;
     cursor:pointer;
 }
-.whatwedo:hover{
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-}
 
-.whatwedo{
-    font-family: spartansemi;
-    font-size: 2.5vw;
-    text-align: left;
-}
   @keyframes loader {
     0% { transform: rotate(0deg);}
     25% { transform: rotate(180deg);}
@@ -212,6 +232,15 @@ body {
 .social:hover, .social:focus {
     background: linear-gradient(90deg, #0E0033, transparent) #CA1D43;
 }
+.arrowback{
+    transition: background-color 0.9s;
+    border-radius: 50px;
+   
+}
+.arrowback:hover, .arrowback:focus{
+    background: linear-gradient(90deg, #0E0033, transparent) #CA1D43;
+
+}
 /*NAVIGATION*/
 .logo{
     width: 70px;
@@ -227,7 +256,7 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 60px;
+    height: 0px;
     background: #0b0123;
     /*background-image: url("../img/background_indredgo.png");*/
     background-position: center;
@@ -279,24 +308,20 @@ nav {
     padding: 20px 0px;
     width: 100%;
     font-family: geniso;
-    z-index: 99;
+    z-index: 999999;
     color: #ffffff;
     text-align: center;
     /*background-image: linear-gradient(to right, #46eded, #28125c);
     */
 }
-@media only screen and (max-width: 700px) {
-    nav {   
-        top:-140px;
 
-    }
-}
 .sticky {
     position: fixed;
     top:0;
     z-index: 99;
-    background-color: #0b0123;
+    background-color: #0b0123e7;
     transition: background-color 0.9s;
+    transition: 1s;
     
 }
 .stickyaside{
@@ -307,11 +332,21 @@ nav {
 }
 
 .nav-link {
+    position: relative;
+    bottom: 10px;
     font-size: 1.1vw;
     font-family: spartanlight;
     box-shadow: inset 0 0 0 0 #ffffff;
     transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+    background: linear-gradient(90deg, #0b0123e7, transparent) #0b0123e7;
+    padding: 12px 33px;
+    border-radius: 50px;
+    transition: background-color 0.9s;
+}
+.nav-link:hover, .nav-link:focus {
+    background: linear-gradient(90deg,#050769 , transparent) #CA1D43;
     
+    color: #fff;
 }
 .nav-link2 {
     font-size: 1.1vw;
@@ -326,6 +361,16 @@ nav {
 @media only screen and (max-width: 700px) {
     .nav-link{
         font-size: 18px;
+        padding: 0;
+        background: none;
+        padding-top: 15px;
+    }
+      nav {   
+       
+    }
+    .sticky {
+        padding-left: 70px;
+        
     }
 }
 #work-underline{
@@ -391,22 +436,46 @@ nav {
     top: 0;
     right: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
     z-index: 9999;
   }
 .vl {
-    margin-top: 30vh;
+    position: relative;
+    height: 100%;
     border-left: 0px solid rgb(255, 255, 255);
-    height: 400px;
     width: 100px;   
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    top: 70px;
 }
 .sidebar a {
-    display: block; /* Make the links appear as blocks */
-    padding: 6px 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
+    display: block;
+    padding: 6px 12px; 
+    text-decoration: none; 
   }
-
- 
+@media only screen and (max-width: 700px) {
+    .sidebar a {
+        
+      }
+    .sidebar{
+        width: 70px;
+    }
+    .aside{
+        width: 70px;
+      }
+    .stickyaside{
+        position: absolute;
+        top:0px;
+        right:0px;
+        z-index: 9;
+    }
+      .vl {
+        width: 70px;
+        align-items: center;
+        justify-content: center;   
+        
+    }
+  }
 /*SECTION1*/
 .main-container {
     background-image: url("img/mainbackground.jpg");
@@ -467,78 +536,86 @@ nav {
     }
 }
 /*Ourscope section*/
-    .ourscope{ 
-        position: relative;
-        top: -70px; 
-        width: 100%;
-        background-color: #09091b;
-        background-image: url(img/sazba.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.ourscope{ 
+    position: relative;
+    top: -75px; 
+    width: 100%;
+    background-color: #09091b;
+    background-image: url(img/sazba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scopecont{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center; /* align items horizontally to center */
+    align-items: center; /* align items vertically to center */
     
-    .scopecont{
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        justify-content: center; /* align items horizontally to center */
-        align-items: center; /* align items vertically to center */
-       
-        margin: auto;
+    margin: auto;
+}
+.scopeiccont{
+    margin: 20px;
+    width: 150px;
+    text-align: center;
+    background-color: #0a051ae3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.scopeiccont:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+.scopetxtcont{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 50px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+.blueback{
+    margin: auto;
+    width: 100%;
+    background: linear-gradient(to bottom, #09091b42, #09091be1);
+        
+}
+.scopedesc{
+    text-align: center;
+    opacity: 0.75;
+    transition: visibility 0s, opacity 0.4s linear;
+    padding-bottom: 20px;
+    padding: 15px;
+}
+.service-img:hover + .scopedesc{
+    opacity: 100; /* Show when hovering over sibling element */
+}
+@media only screen and (max-width: 700px) {
+    .scopetxtcont{
+        padding: 0px;
+    }
+    .scopedesc{
+        opacity: 1;
     }
     .scopeiccont{
-        margin: 20px;
+        margin: 0px;
         width: 150px;
         text-align: center;
         background-color: #0a051a;
-        border-radius: 20px;
+        border-radius: 0px;
         cursor: pointer;
     }
-    .scopeiccont:hover{
-        -webkit-animation: pulse 1s;
-        animation: pulse 1s;
-    }
-    .scopetxtcont{
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        padding: 50px;
-        padding-top: 20px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-    }
-    .blueback{
-        margin: auto;
-        width: 100%;
-        background: linear-gradient(to bottom, #09091b42, #09091be1);
-         
-
-    }
-    .scopedesc{
-        text-align: center;
-        opacity: 0;
-        transition: visibility 0s, opacity 0.4s linear;
-        padding-bottom: 20px;
-        padding: 15px;
-    }
-    .service-img:hover + .scopedesc{
-        opacity: 100; /* Show when hovering over sibling element */
-    }
-/*SECTION2*/
-.servicesec{
-    position: relative;
-    top: -70px;
-    background-color: #04010e;
-    background-image: url("../img/lightkinetism4.pn");
-    background-size: cover;
-    background-position: center;
 }
+
+/*SECTION2*/
+
 .motoCont{
     margin-left: 10vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 .about{
     width: 100%;
@@ -546,23 +623,21 @@ nav {
     bottom: 70px;
     text-align: center;
 }
-.aboutme{
-    height: 85vh;
-    z-index: 9;
-    background-image: url("img/illustration.png");
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
+.aboutmobile{
+    display: none;
 }
+
 #aboutscroll{
     position: absolute;
     top: 92vh;
     width: 90px;
     height: 40px;
 }
-.about-wrapper{
+.aboutwrap{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -573,41 +648,88 @@ nav {
     background-size: cover;
     padding: 0px;
 }
+.aboutimg{
+    width: 100%;
+    right: 0;
+}
+.whatwedo:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+.whatwedo{
+    font-family: spartansemi;
+    font-size: 2.5vw;
+    text-align: left;
+}
+.scrollmore{
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    text-align: left;
+}
 @media only screen and (max-width: 1200px) {
     .about-wrapper{
         height: 70vh;
     }
+    .motoCont{
+        margin-top: 30px;
+    }
   }
 @media only screen and (max-width: 700px) {
-    .aboutme{
-        display: none;
+    .about{
+       display: none;
+    }
+    .aboutmobile{
+        display: block;
+        width: 100%;
+        position: relative;
+        bottom: 70px;
+        text-align: center;
+    }
+    .aboutwrap{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #09091b;
+        padding: 0px;
+    }
+    .motoCont{
+        margin: 30px;
+        margin-right: 50px;
+    }
+    .whatwedo{
+        font-family: spartansemi;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .hiremobilewrap{
+        position: absolute;
+        height: 100%;
+        top: 72%;
+        left: 30px;
+    }
+    .scrollmore{
+        top: 0px;
+        margin-top: 2vh;
+        position: absolute;
+        top: 50%;
+        left: 30px;
     }
   }
 
 /*SECTION3*/
-
-.head-services{
-    font-size: 2.5rem;
-    text-align: center;
+.servicesec{
     position: relative;
-    width: 100%;
-    padding: 50px;
-    padding-top: 50px;
-    color: #ffffff;
-    
-    
+    padding-top: 70px;
+    top: -70px;
+    background-color: #04010e;
+    background-size: cover;
+    background-position: center;
 }
-@media only screen and (max-width: 700px) {
-    .head-services{
-        font-size: 2rem;
-        text-align: center;
-        position: relative;
-        bottom: 0px;
-        width: 100%;
-        padding-top: 20px;
-        
-    }
-}
+
 .indigo{
     width: 90%;
     margin-left: auto;
@@ -615,18 +737,7 @@ nav {
     padding-left: 10vw;
     padding-right: 10vw;  
 }
-@media only screen and (max-width: 700px) {
-    .indigo{
-        padding-left: 0;
-        padding-right: 0;
-        width: 90%;
-        bottom: 110px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
-    }
-  }
+
 
 .service-img{
     position: relative;
@@ -675,16 +786,7 @@ nav {
     text-align: left;
     bottom: 0;
 }
-@media only screen and (max-width: 700px) {
-    .service-txt{
-        position: relative;
-        opacity: 1;
-        font-size: 15px;
-        bottom: 110px;
-        text-align: right;
-        padding-right: 20px;
-    }
-}
+
 .serviceMain{
     position: relative;
     max-width: 100%;
@@ -764,6 +866,74 @@ nav {
     background-color: #0A051A;
     padding-left: 20px;
 }
+@media only screen and (max-width: 700px) {
+    .indigo{
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%;
+        bottom: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+    .head-services{
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        padding-top: 20px;
+        
+    }
+    .servcontline{
+        border: solid white 1px;
+        border-radius: 20px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    
+    }
+    .service-txt p{
+        opacity: 1;
+        font-size: 1.2rem;
+        text-align: left;
+        padding-right: 0px;
+        margin-left: 10px;
+    }
+    .servsplit{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    
+    }
+    .servImg2 img{
+        max-height: 50vw;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+        padding: 0px;
+    }
+    .service-img2{
+        width: 130px;
+    }
+    .servback{
+        padding-left: 0px;
+    }
+    .servbutcont{
+        position: absolute;
+        margin-top: 5vw;
+        top: 10vh;
+        right: 5vh;
+    }
+    .servdesctxt{
+        font-size: 17px;
+        margin: 10px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+  }
 @media only screen and (min-width: 1600px) {
     .servicewraper{
      
@@ -810,9 +980,6 @@ nav {
     .servcontline{
         padding: 10px;
     }
-    .header4{
-        font-size: 2rem;
-    }
     
 }
 /*Animation Services scroll*/
@@ -858,6 +1025,7 @@ nav {
 }
 .contcont p{
     text-align: center;
+    margin-top: 5px;
 }
 .conticon{
     max-width: 65px;
@@ -1207,7 +1375,7 @@ nav {
 .hireuswraper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    
     flex-direction: row;
     width: 80%;
     margin: auto;
@@ -1226,10 +1394,10 @@ nav {
     grid-column-end: span col4-start;
     grid-row-start: 2;
     grid-row-end: span 2;
-    position: relative;
-    margin: auto;
-    top: 5vh;
-    right: 0; 
+    position: absolute;
+    right: 10%;
+    margin-top: 50px;
+    
 }
 .hireuscont{
     justify-content: center;
@@ -1243,7 +1411,7 @@ nav {
     text-align: center;
     font-size: 15px;
     padding-bottom: 50px;
-    top: 90px;
+    top: 25px;
 }
 .main-container-hireus {
     background: linear-gradient(to left, #0a051a, #071844);
