@@ -242,8 +242,19 @@ body {
 
 }
 /*NAVIGATION*/
-.logo{
+
+.logo {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 70px;
+    z-index: 1;
+    transition: all 1s;
     width: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 .logolink{
     width: 60px;
@@ -278,6 +289,7 @@ body {
     top: 0;
     bottom: 0;
 }
+
 .hide {
     opacity:0;
     bottom:-100%;
@@ -307,7 +319,6 @@ nav {
     justify-items: center;
     padding: 20px 0px;
     width: 100%;
-    font-family: geniso;
     z-index: 999999;
     color: #ffffff;
     text-align: center;
@@ -579,6 +590,8 @@ nav {
     text-align: center;   
 }
 .blueback{
+    padding-top: 70px;
+    padding-bottom: 50px;
     margin: auto;
     width: 100%;
     background: linear-gradient(to bottom, #09091b42, #09091be1);
@@ -1380,12 +1393,18 @@ nav {
 /*Hire us page style*/
 .subpagenav{
     position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     top: 0;
-    right: 0;
     width: 100%;
     background-color: #0a0122;
-    z-index: 99999;
+    z-index: 99;
     height: 70px;    
+    justify-items: center;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
 }
 .hireuswraper{
     display: grid;
@@ -1436,7 +1455,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 80px;
 }
 .backwrap{
@@ -1449,4 +1468,44 @@ nav {
     width: 50px;
     rotate: 180deg;
     margin-left: 10px;
+}
+@media only screen and (max-width: 700px){
+    .subpagenav{
+        padding-left: 70px;
+    }
+    .main-container-hireus {
+        padding-top: 10px;
+    }
+    .hireuswraper{
+        grid-template-columns: 1fr; 
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    #pricelisthire{
+        margin-top: 10px;
+        
+    }
+    .backwrap{
+        position: relative;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px; 
+        left: 0;
+        justify-content: center;
+        align-items: center; 
+    }
+    .sidebarhire{
+        display: none;
+    }
+    .hiretxt{
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navlinkbot{
+        background: linear-gradient(90deg, #0b0123e7, transparent) #0b0123e7;
+        padding: 10px 12px;
+        outline: solid 1px;
+    }
 }
