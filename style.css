@@ -37,6 +37,7 @@
 }
 
 .gradient-hover-effect {   
+    outline: solid 1px #e4ddfc;
     padding: 12px 33px;
     background: linear-gradient(90deg, #0E0033, transparent) #050769;
     font-family: spartanlight;
@@ -46,7 +47,7 @@
     transition: background-color 0.9s;
     place-content: center;
     border-radius: 40px;
-    border: solid 1px rgb(185, 185, 230);
+    
     
 }
 .gradient-hover-effect:hover, .gradient-hover-effect:focus {
@@ -64,7 +65,7 @@
     transition: background-color 0.9s;
     place-content: center;
     border-radius: 40px;
-    border: solid 1px rgb(185, 185, 230);    
+    outline: solid 1px #e4ddfc;    
 }
 .gradient-hover-effect2:hover, .gradient-hover-effect2:focus {
     background-color: #CA1D43;
@@ -89,12 +90,14 @@
     font-family: be;
     text-align: center;
     padding: 40px;
+
 }
 .header3{
     font-size: 1.5rem;
     font-family: spartansemi;
     text-align: center;
     padding: 40px;
+    
 }
 .header4{
     font-size: 2vw;
@@ -128,7 +131,7 @@
         text-align: left;
     }
     .header2{
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         padding: 0px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -353,10 +356,10 @@ nav {
     padding: 12px 33px;
     border-radius: 50px;
     transition: background-color 0.9s;
+    color: #e4ddfc;
 }
 .nav-link:hover, .nav-link:focus {
     background: linear-gradient(90deg,#0a0022 , transparent) #CA1D43;
-    
     color: #fff;
 }
 .nav-link2 {
@@ -489,7 +492,7 @@ nav {
   }
 /*SECTION1*/
 .main-container {
-    background-image: url("img/mainbackground.jpg");
+    background-image: url("img/plasmamorph.jpg");
     background-color: #0f0f0f;
     height: auto;
     width: 100%;
@@ -552,7 +555,7 @@ nav {
     top: -75px; 
     width: 100%;
    
-    background-image: url(img/sazba.jpg);
+    background-image: url(img/gradientv4hard.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -574,7 +577,7 @@ nav {
     background-color: #0a051ae3;
     border-radius: 15px;
     cursor: pointer;
-    outline: solid 1px;
+    outline: solid 1px #e4ddfc;
 }
 .scopeiccont:hover{
     -webkit-animation: pulse 1s;
@@ -609,6 +612,7 @@ nav {
 .service-img:hover + .scopedesc{
     opacity: 100; /* Show when hovering over sibling element */
 }
+
 @media only screen and (max-width: 700px) {
     .scopetxtcont{
         padding: 0px;
@@ -616,6 +620,7 @@ nav {
     }
     .scopedesc{
         opacity: 1;
+        
     }
     .scopeiccont{
         margin: 0px;
@@ -623,7 +628,27 @@ nav {
         text-align: center;
         background-color: #0a051a;
         border-radius: 0px;
-        cursor: pointer;
+        outline: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .scopelink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 450px){
+    .scopecont{
+        display: flex;
+        flex-direction: column;
+    }
+    .scopeiccont{
+        border-radius: 15px;
+        outline: solid 1px #e4ddfc;
+    }
+    .scopelink{
+        margin-top:20px ;
     }
 }
 
@@ -756,8 +781,8 @@ nav {
 
 
 .service-img{
-    position: relative;
-    display: block;
+   
+   
     width: 150px;
     -webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
@@ -864,7 +889,8 @@ nav {
 }
 
 .servcontline{
-    border: solid white 1px;
+    outline: solid #e4ddfc 1px;
+    background-color: #0a051a;
     border-radius: 20px;
     width: 100%;
     padding-left: 5vh;
@@ -902,7 +928,6 @@ nav {
         
     }
     .servcontline{
-        border: solid white 1px;
         border-radius: 20px;
         width: 100%;
         padding-left: 5px;
@@ -1441,6 +1466,7 @@ nav {
     position: absolute;
     right: 10%;
     margin-top: 50px;
+    border: solid 1px;
     
 }
 .hireuscont{
@@ -1458,8 +1484,8 @@ nav {
     top: 25px;
 }
 .main-container-hireus {
-    background: linear-gradient(to left, #0a051a, #071844);
-    background-color: #0f0f0f;
+    background: linear-gradient(to left, #0a051a, #07184400);
+    background-color: #03010c;
     height: auto;
     width: 100%;
     background-position: center;
@@ -1479,6 +1505,11 @@ nav {
     width: 50px;
     rotate: 180deg;
     margin-left: 10px;
+}
+.titulekwrap{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (max-width: 700px){
     .subpagenav{
@@ -1517,7 +1548,7 @@ nav {
     .navlinkbot{
         background: linear-gradient(90deg, #0b0123e7, transparent) #0b0123e7;
         padding: 10px 12px;
-        outline: solid 1px;
+        outline: solid 1px #e4ddfc;
     }
 }
 /*Services details style*/ 
@@ -1586,6 +1617,9 @@ nav {
    
 }
 @media only screen and (max-width: 700px){
+    .titulek{
+        font-size: 3rem;
+    }
     .cont1{
         display: flex;
         flex-wrap: wrap;
