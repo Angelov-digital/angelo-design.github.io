@@ -375,9 +375,10 @@ nav {
 @media only screen and (max-width: 700px) {
     .nav-link{
         font-size: 18px;
-        padding: 0;
+        padding: 5px 15px;
+        margin-top: 10px;
         background: none;
-        padding-top: 15px;
+       
     }
     nav {   
        
@@ -554,7 +555,6 @@ nav {
     position: relative;
     top: -75px; 
     width: 100%;
-   
     background-image: url(img/gradientv4hard.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -570,6 +570,7 @@ nav {
     
     margin: auto;
 }
+
 .scopeiccont{
     margin: 20px;
     width: 150px;
@@ -612,7 +613,14 @@ nav {
 .service-img:hover + .scopedesc{
     opacity: 100; /* Show when hovering over sibling element */
 }
+.readmorewrap{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
 
+}
 @media only screen and (max-width: 700px) {
     .scopetxtcont{
         padding: 0px;
@@ -637,7 +645,12 @@ nav {
         justify-content: center;
         align-items: center;
     }
+    .readmorewrap{
+        margin-top: 30px;
+    
+    }
 }
+
 @media only screen and (max-width: 450px){
     .scopecont{
         display: flex;
