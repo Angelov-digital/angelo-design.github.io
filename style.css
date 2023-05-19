@@ -352,7 +352,7 @@ nav {
     font-family: spartansemi;
     box-shadow: inset 0 0 0 0 #ffffff;
     transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
-    background: linear-gradient(90deg, #0b0123e7, transparent) #0b0123e7;
+    /*background: linear-gradient(90deg, #0b0123e7, transparent) #0b0123e7;*/
     padding: 12px 33px;
     border-radius: 50px;
     transition: background-color 0.9s;
@@ -451,7 +451,7 @@ nav {
     top: 0;
     right: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
-    z-index: 9999;
+    z-index: 99;
   }
 .vl {
     position: relative;
@@ -1186,8 +1186,8 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgba(196, 196, 196, 0);
+    justify-content:center ;
+    background-color: #04010e;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -1195,19 +1195,27 @@ nav {
 }
 @media only screen and (max-width: 700px) {
     .projects-wrapper{
-        background-color: #1f1f1f9d;
+        background-color: #000000;
         width: 90%;
         border-radius: 5px;   
     }
   }
 .project{
-    max-height: 30vh;
-    flex-grow: 1;
-    max-width: 100%;
+    max-height: 30vh;  
+    object-fit: cover;
+    vertical-align: bottom;
+    padding: 0px;
     cursor: pointer;
-    
+    margin: 8px;
 }
 .project img{
+    max-height: 30vh;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    padding: 0px;
+}
+.projectvideo{
     max-height: 30vh;
     min-width: 100%;
     object-fit: cover;
@@ -1216,7 +1224,7 @@ nav {
 }
 
 .project:hover .project-txt-overlay{
-    width: 450px;
+    width: 70%;
 }
 .project:hover .project-txt-overlay-vertical{
     width: 100%;
@@ -1231,7 +1239,7 @@ nav {
     overflow: hidden;
     transition: 0.7s ease;
     z-index: 10;
-    background-color: #101010c5;
+    background-color: #090020e0;
     white-space: nowrap;
     align-items: center;
     padding-left: 10px;
@@ -1253,10 +1261,14 @@ nav {
 
 
 @media only screen and (max-width: 700px) {
+    .project{
+        margin-top: 1.5vh;
+    }
     .project-txt-overlay {
-       width: 100%;
-       bottom: 0;
-       z-index: 0;
+        position: relative;
+        width: 100%;
+        bottom: 0px;
+        z-index: 0;
     }
     .project-txt-overlay-vertical {
         width: 100%;
@@ -1304,21 +1316,24 @@ nav {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 60px; /* Location of the box */
     left: 0;
-    top: 60px;
+    top: 0px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.781); /* Black w/ opacity */
-    z-index: 9999;
+    z-index: 100;
   }
   /* Add Animation - Zoom in the Modal */
 .modal-head{
-    font-size: 30px;
-    text-align: center;
-    margin: 20px;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: be;
 }
 .modal-description{
     margin: 20px;
@@ -1328,12 +1343,22 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .modal-content{
     display: block;
-    height: 50vh;
+    height: 40vh;
     animation-name: zoom;
     animation-duration: 0.6s;
+    margin-bottom: 20px;
+  }
+.modal-contentvideo{
+    display: block;
+    height: 40vh;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin-bottom: 20px;
   }
 .modal-content-vertical{
     display: block;
@@ -1341,11 +1366,23 @@ nav {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
       height: auto;
+    }
+    .modal-contentvideo {
+        width: 100%;
+        height: auto;
+      }
+    .projectvideo{
+        width: 100%;
+        height: auto;
+    }
+    .modal-head{
+        font-size: 2rem;
     }
   }
 @keyframes zoom {

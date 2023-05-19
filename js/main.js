@@ -120,9 +120,7 @@ var modal3 = document.getElementById("project3-modal");
 var modal4 = document.getElementById("project4-modal");
 var modal5 = document.getElementById("project5-modal");
 var modal6 = document.getElementById("project6-modal");
-var modal7 = document.getElementById("project7-modal");
-var modal8 = document.getElementById("project8-modal");
-var modal9 = document.getElementById("project9-modal");
+
 
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -132,9 +130,7 @@ var trigger3 = document.getElementById("project3");
 var trigger4 = document.getElementById("project4");
 var trigger5 = document.getElementById("project5");
 var trigger6 = document.getElementById("project6");
-var trigger7 = document.getElementById("project7");
-var trigger8 = document.getElementById("project8");
-var trigger9 = document.getElementById("project9");
+
 
 
 //var modalImg = document.getElementById("img01");
@@ -171,114 +167,6 @@ trigger6.onclick = function(){
   
   
 }
-trigger7.onclick = function(){
-  modal7.style.display = "block";
-  
-  
-}
-trigger8.onclick = function(){
-  modal8.style.display = "block";
-  
-  
-}
-trigger9.onclick = function(){
-  modal9.style.display = "block";
-  
-  
-}
-
-//Next functions
-var next = document.getElementById("next1");
-next.onclick = function(){
-  modal2.style.display = "block";
-  modal.style.display = "none";  
-}
-var next2 = document.getElementById("next2");
-next2.onclick = function(){
-  modal3.style.display = "block";
-  modal2.style.display = "none";  
-}
-var next3 = document.getElementById("next3");
-next3.onclick = function(){
-  modal4.style.display = "block";
-  modal3.style.display = "none";  
-}
-var next4 = document.getElementById("next4");
-next4.onclick = function(){
-  modal5.style.display = "block";
-  modal4.style.display = "none";  
-}
-var next5 = document.getElementById("next5");
-next5.onclick = function(){
-  modal6.style.display = "block";
-  modal5.style.display = "none";  
-}
-var next6 = document.getElementById("next6");
-next6.onclick = function(){
-  modal7.style.display = "block";
-  modal6.style.display = "none";  
-}
-var next7 = document.getElementById("next7");
-next7.onclick = function(){
-  modal8.style.display = "block";
-  modal7.style.display = "none";  
-}
-var next8 = document.getElementById("next8");
-next8.onclick = function(){
-  modal9.style.display = "block";
-  modal8.style.display = "none";  
-}
-var next9 = document.getElementById("next9");
-next9.onclick = function(){
-  modal.style.display = "block";
-  modal9.style.display = "none";  
-}
-//Back functions
-var prev1 = document.getElementById("prev1");
-prev1.onclick = function(){
-  modal9.style.display = "block";
-  modal.style.display = "none";  
-}
-var prev2 = document.getElementById("prev2");
-prev2.onclick = function(){
-  modal.style.display = "block";
-  modal2.style.display = "none";  
-}
-var prev3 = document.getElementById("prev3");
-prev3.onclick = function(){
-  modal2.style.display = "block";
-  modal3.style.display = "none";  
-}
-var prev4 = document.getElementById("prev4");
-prev4.onclick = function(){
-  modal3.style.display = "block";
-  modal4.style.display = "none";  
-}
-var prev5 = document.getElementById("prev5");
-prev5.onclick = function(){
-  modal4.style.display = "block";
-  modal5.style.display = "none";  
-}
-var prev6 = document.getElementById("prev6");
-prev6.onclick = function(){
-  modal5.style.display = "block";
-  modal6.style.display = "none";  
-}
-var prev7 = document.getElementById("prev7");
-prev7.onclick = function(){
-  modal6.style.display = "block";
-  modal7.style.display = "none";  
-}
-var prev8 = document.getElementById("prev8");
-prev8.onclick = function(){
-  modal7.style.display = "block";
-  modal8.style.display = "none";  
-}
-var prev9 = document.getElementById("prev9");
-prev9.onclick = function(){
-  modal8.style.display = "block";
-  modal9.style.display = "none";  
-}
 
 
 
@@ -289,9 +177,7 @@ var span3 = document.getElementById("close3");
 var span4 = document.getElementById("close4");
 var span5 = document.getElementById("close5");
 var span6 = document.getElementById("close6");
-var span7 = document.getElementById("close7");
-var span8 = document.getElementById("close8");
-var span9 = document.getElementById("close9");
+
 
 
 // When the user clicks on <span> (x), close the modal
@@ -313,12 +199,4 @@ span5.onclick = function() {
 span6.onclick = function() {
   modal6.style.display = "none";  
 }
-span7.onclick = function() {
-  modal7.style.display = "none";  
-}
-span8.onclick = function() {
-  modal8.style.display = "none";  
-}
-span9.onclick = function() {
-  modal9.style.display = "none";  
-}
+
