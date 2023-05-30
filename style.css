@@ -245,7 +245,9 @@ body {
 
 }
 /*NAVIGATION*/
-
+#logo {
+    background-color: white;
+}
 .logo {
     position: fixed;
     top: 0px;
